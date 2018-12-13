@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animus Populi - It's coming</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            display:flex;
+            flex-direction: column;
+            height:100vh;
+            width:100vw;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            /* background-image:linear-gradient(to top, #111 30%, #333); */
+            background-size:cover;
+            font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
+            color:#fff;
+            font-size:16px;
+        }
+        .logo{
+            width:40vw;
+            position: relative;
+        }
+            .logo object{
+                width:100%;
+                position: relative;
+                z-index: 2;
+            }
+            .logo:after{
+                position: absolute;
+                content:'';
+                width:50%;
+                top:75%;
+                left:3%;
+                border-radius:50%;
+                height: 5%;
+                transform: scale(1.5);
+                display:block;
+                transform: translateY(1px);
+                background-image:radial-gradient(#000, rgba(0,0,0,0) 80%);                
+            }
+            .logo:before{
+                position: absolute;
+                content:'';
+                width:50%;
+                top:70%;
+                left:3%;
+                border-radius:25%;
+                height: 15%;
+                transform: scale(1.25);
+                display:block;
+                background-image:radial-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0) 70%);
+
+            }
+            .logo object path.animus{
+                fill:#fff;
+            }
+        p{
+            margin:0;
+            padding:0;
+            font-size: 1.5em;
+            font-weight: 100;
+            opacity: .6;
+        }
+        @media(max-width:768px){
+            body{
+                font-size: 12px;
+            }
+            .logo {
+                width:80vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <object type="image/svg+xml" data="assets/logo.svg" class="logo">Animus Populi</object>
+    </div>
+    <p>Mankind's ultimate creation</p>
+</body>
+</html>
